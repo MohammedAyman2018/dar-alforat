@@ -44,7 +44,7 @@ body,html
 
 @media screen and ( max-width: 640px )
   nav .links 
-    transform: translateX(800px) !important
+    transform: translateX(-640px)
     ul li
       padding: 20px 0
 
@@ -59,3 +59,18 @@ button
 
 nav .links ul li a.active
   color: lighten($main-blue, 10)
+
+.bug
+  max-height: 96px
+// header
+.header
+  position: relative
+  
+  &::after
+    position: absolute
+    width: 100%
+    border: 2px solid #000000
+    height: 2px
+    content: ''
+    bottom: 0
+    left: 0

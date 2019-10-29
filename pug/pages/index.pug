@@ -15,21 +15,23 @@ html(lang="ar" dir="rtl")
         link(rel='shortcut icon' href='./img/logo.jpg' type='image/x-icon')
         title دار الفرات
     body
-        .preload
-            .logo
-                img(src='./img/logo.jpg' alt='logo')
-            .overlay
+        //- .preload
+        //-     .logo
+        //-         img(src='./img/logo.jpg' alt='logo')
+        //-     .overlay
 
         include ../components/Navbar
         +navbar(['active','','','',''])
 
         .banner.flex.flex-wrap.justify-center.items-center
-            main.text-white.z-40.font-semibold.text-center(class="text-lg md:text-5xl" data-scroll='')
+            main.text-white.z-40.font-semibold.text-center(class="text-lg ms:text-xl md:text-3xl lg:text-4xl" data-scroll='')
                 h1 دار الفرات للنشر والتوزيع <br> هدفنا إحياء التراث العربي و إثراء المكتبة العربية
                 include ../utils/ourButton
                 +btn('تصفح الكتب', 'text-lg text-white my-4')
 
-
+            i.scroll.fas.fa-angle-double-down.text-white.text-3xl.z-40
+        include ../components/leatestBooks
+        
         script(src='./js/move.js')
         script(src='./js/scroll-out.js')
         script(src='./js/app.js')
