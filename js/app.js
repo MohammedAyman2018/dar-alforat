@@ -20,10 +20,18 @@ window.onscroll = function () {
             .duration('0.7s')
             .end();
 
-        move(collapseDiv)
-            .set('background', 'black')
-            .duration('0.7s')
-            .end()
+        if (screen.width <= 640) {
+            move(collapseDiv)
+                .set('background', 'black')
+                .duration('0.7s')
+                .end()
+        } else {
+            move(collapseDiv)
+                .set('background', 'transparent')
+                .duration('0.7s')
+                .end()
+        }
+
     } else {
         navLinks.forEach(link => {
             link.style.color = "black";
@@ -44,16 +52,16 @@ collapseBtn.onclick = function () {
     console.log();
     if (collapseDiv.style.transform !== 'translateX(0px)')
         move(collapseDiv)
-            .x(0)
-            .set('background', 'black')
-            .duration('0.7s')
-            .end();
+        .x(0)
+        .set('background', 'black')
+        .duration('0.7s')
+        .end();
     else
         move(collapseDiv)
-            .x(-screen.width)
-            .set('background', 'transparent')
-            .duration('0.7s')
-            .end();
+        .x(-screen.width)
+        .set('background', 'transparent')
+        .duration('0.7s')
+        .end();
 };
 
 // function Animate() {
