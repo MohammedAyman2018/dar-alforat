@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="ar" dir="rtl")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        //font awesome
+        script(src='https://kit.fontawesome.com/7ccf14bcd9.js')
+        // Tailwind
+        link(href='./css/tailwind.css' rel='stylesheet')
+        // google fonts
+        link(href='https://fonts.googleapis.com/css?family=Almarai:400,700,800|El+Messiri:400,500,600,700|Markazi+Text:400,500,600,700|Reem+Kufi&display=swap&subset=arabic' rel='stylesheet')
+        // Our css
+        link(rel='stylesheet' href='./sass/home.css')
+        link(rel='shortcut icon' href='./img/logo.jpg' type='image/x-icon')
+        title دار الفرات
+    body
+        .preload
+            .logo
+                img(src='./img/logo.jpg' alt='logo')
+            .overlay
+
+        include ../components/Navbar
+        +navbar(['active','','','',''])
+
+        .banner.flex.flex-wrap.justify-center.items-center
+            main.text-white.z-40.font-semibold.text-center(class="text-lg md:text-5xl" data-scroll='')
+                h1 دار الفرات للنشر والتوزيع <br> هدفنا إحياء التراث العربي و إثراء المكتبة العربية
+                include ../utils/ourButton
+                +btn('تصفح الكتب', 'text-lg text-white my-4')
+
+
+        script(src='./js/move.js')
+        script(src='./js/scroll-out.js')
+        script(src='./js/app.js')

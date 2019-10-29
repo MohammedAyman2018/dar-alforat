@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/7ccf14bcd9.js"></script>
+    <!-- Tailwind-->
+    <link href="./css/tailwind.css" rel="stylesheet"/>
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Almarai:400,700,800|El+Messiri:400,500,600,700|Markazi+Text:400,500,600,700|Reem+Kufi&amp;display=swap&amp;subset=arabic" rel="stylesheet"/>
+    <!-- Our css-->
+    <link rel="stylesheet" href="./sass/home.css"/>
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon"/>
+    <title>دار الفرات</title>
+  </head>
+  <body>
+    <div class="preload">
+      <div class="logo"><img src="./img/logo.jpg" alt="logo"/></div>
+      <div class="overlay"></div>
+    </div>
+        <nav class="fixed w-full h-24 top-0 z-50">
+          <div class="container mx-auto">
+            <div class="flex flex-wrap justify-around">
+              <div class="img flex justify-around items-center w-full sm:w-2/12"><img class="h-24" src="./img/logo.jpg" alt="logo"/><i class="mx-2 fas fa-bars text-white text-lg block sm:hidden" id="toggle"></i></div>
+              <div class="links w-50 mx-auto p-5 sm:mx-0 sm:w-auto sm:block sm:w-10/12 lg:w-6/12 z-50" id="collapseable">
+                <ul class="h-full block sm:flex sm:flex-wrap sm:items-center">
+                  <li class="align-middle flex-1 text-white block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a class="active" href="index.html">الرئيسية</a></li>
+                  <li class="align-middle flex-1 text-white block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="books.html">الإصدارات</a></li>
+                  <li class="align-middle flex-1 text-white block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="sells.html">منافذ البيع</a></li>
+                  <li class="align-middle flex-1 text-white block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="contactUs.html">تواصل معنا</a></li>
+                  <li class="align-middle flex-1 text-white block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="news.html">الأخبار</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    <div class="banner flex flex-wrap justify-center items-center">
+      <main class="text-white z-40 font-semibold text-center text-lg md:text-5xl" data-scroll="">
+        <h1>دار الفرات للنشر والتوزيع <br> هدفنا إحياء التراث العربي و إثراء المكتبة العربية</h1>
+                <button class="p-2 px-4 text-lg text-white my-4">تصفح الكتب</button>
+      </main>
+    </div>
+    <script src="./js/move.js"></script>
+    <script src="./js/scroll-out.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

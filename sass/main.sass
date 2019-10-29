@@ -1,0 +1,61 @@
+$main-blue: #17617A
+$main-white: #E7E8EA
+
+
+body,html
+  height: 10000px !important
+  
+
+*
+    font-family: 'El Messiri', sans-serif
+
+// page loader animation
+.preload
+  width: 100%
+  height: 100%
+  position: fixed
+  background-color: $main-white
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 999999
+
+.logo
+  z-index: 999999
+
+.overlay
+  background-color: $main-blue
+  width: 100%
+  height: 100%
+  position: fixed
+  transform: translateX(-100%)
+
+// Add animation in elements appearence
+[data-scroll]
+  transition: all 1s
+
+[data-scroll="in"]
+  opacity: 1
+  transform: translateY(0px)
+
+[data-scroll="out"] 
+  opacity: 0
+  transform: translateY(200px)
+
+@media screen and ( max-width: 640px )
+  nav .links 
+    transform: translateX(800px) !important
+    ul li
+      padding: 20px 0
+
+// general button styles
+button
+  background-color: darken($main-blue, 5)
+  transition: all 0.4s ease
+  &:hover
+    background-color: lighten($main-blue, 5)
+  &:focus, &:active
+    outline: none
+
+nav .links ul li a.active
+  color: lighten($main-blue, 10)
