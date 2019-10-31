@@ -1,7 +1,7 @@
-// window.onload = function (){
-//     Animate();    
-//     ScrollOut();
-// }
+window.onload = function (){
+    Animate();    
+    ScrollOut();
+}
 
 var collapseBtn = document.getElementById('toggle'),
     collapseDiv = document.getElementById('collapseable'),
@@ -64,14 +64,14 @@ collapseBtn.onclick = function () {
         .end();
 };
 
-// function Animate() {
-//     move('.overlay')
-//         .x(0)
-//         .duration(3000)
-//         .then()
-//             move('.preload')
-//                 .x(4000)
-//                 .duration(2000)
-//                 .delay(1000)
-//     .end();
-// }
+function Animate() {
+    move('.overlay')
+        .x(0)
+        .duration(3000)
+        .then()
+            move('.preload')
+                .x(4000)
+                .duration(2000)
+                .delay(1000)
+    .end();
+}
