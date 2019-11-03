@@ -77,6 +77,14 @@ h2.header {
   display: inline-block;
 }
 
+.blue {
+  background-color: #17617A;
+}
+
+.white {
+  background-color: #E7E8EA;
+}
+
 .banner {
   background-image: url("../img/banner.png");
   height: 100vh;
