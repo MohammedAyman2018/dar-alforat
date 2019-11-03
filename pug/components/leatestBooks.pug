@@ -1,13 +1,13 @@
-.leatstBooks.my-32.text-center(data-scroll='')
+.leatstBooks.my-32.text-center.overflow-x-hidden(data-scroll='')
     include ../utils/header
     +header('آخر إصداراتنا')
     .container.mx-auto.mt-8
         .-mx-2
             .flex.flex-wrap.px-2
                 - for(let i = 0; i < 4;i++){
-                    .book.px-2.my-2(class="w-1/4")
+                    .book.px-2.my-2(class="w-full sm:w-1/2 lg:w-1/4")
                         a(href='book.html')
-                            img(src="./img/book.png", alt="")
+                            img(src="./img/book.png", style="min-width: 100%", alt="")
                         footer.p-2
                             span.text-white.text-lg.font-semibold الكاتب:
                             p.inline-block.text-center.text-white.text-lg.font-semibold عبيد القاسم بن سلام
