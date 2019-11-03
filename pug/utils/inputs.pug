@@ -5,7 +5,7 @@ mixin input( label ,input,hint)
         p.hint.text-right.my-3=hint
 
 mixin textarea( label ,input ,hint)
-    .input.mr-8
+    .input
         label( for=label.name , class='block font-bold text-xl text-right my-2')=label.text
         textarea( id=input.id,name=input.name, class='py-4 px-3 text-gray-800 font-semibold bg-gray-300 w-full', placeholder=input.placeholder)&attributes(attributes)
         p.hint.text-right.my-3=hint
