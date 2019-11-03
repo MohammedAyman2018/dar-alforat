@@ -63,6 +63,10 @@ button:focus, button:active {
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 nav .links ul li a.active {
   color: #1f83a5;
 }
@@ -83,6 +87,11 @@ h2.header {
 
 .white {
   background-color: #E7E8EA;
+}
+
+.hint {
+  color: #17617A;
+  display: none;
 }
 
 .banner {

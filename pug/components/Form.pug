@@ -1,0 +1,22 @@
+.form.my-32.text-center.overflow-x-hidden(data-scroll='')
+    include ../utils/header
+    +header('تواصل معنا')
+    form(action="#" method="method")
+        .container.mx-auto.mt-8
+            .-mx-2
+                .flex.flex-wrap.px-2
+                    .left(class="w-full md:w-1/4 px-2")
+                        .control(class="w-full mb-8")
+                            include ../utils/inputs
+                            //  label / input  
+                            +input( { name: 'name', text: 'الإسم:'} , {type: "text" , placeholder: "اكتب اسمك"} , 'رسالة توضيحية')(required)
+                        .control(class="w-full mb-8")
+                            //  label / input  
+                            +input( { name: 'phone', text: 'رقم الهاتف:'} , {type: "tel" , placeholder: "اكتب رقم هاتفك"} , 'رسالة توضيحية')(pattern="[0-9]{11}" required)
+                        .control(class="w-full mb-8")
+                            // label / input  
+                            +input( { name: 'email', text: 'البريد الالكتروني:'} , {type: "email" , placeholder: "مثال : example@example.com"} , 'رسالة توضيحية')(required)
+                    .right(class="w-full md:w-2/4 px-2")
+                        +textarea( { name: 'info', text: 'رسالتك:'} , {id:'info',name: 'info', placeholder: "لتكن رسالتك بناءة"}, 'رسالة توضيحية')( cols="30", rows="9")
+                        include ../utils/ourButton
+                        +btn('ارسل', 'mt-4')(type="submit")
