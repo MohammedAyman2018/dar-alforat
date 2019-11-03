@@ -1,6 +1,6 @@
-.leatstBooks.my-32.text-center.overflow-x-hidden(data-scroll='')
+.recommended.my-32.text-center.overflow-x-hidden(data-scroll='')
     include ../utils/header
-    +header('آخر إصداراتنا')
+    +header('كتب يُنصَح بها')
     .container.mx-auto.mt-8
         .-mx-2
             .flex.flex-wrap.px-2
@@ -8,7 +8,3 @@
                     include ../utils/card
                     +card("w-full px-2 my-2 sm:w-1/2 lg:w-1/4")
                 - }
-
-    include ../utils/ourButton
-    +btn('شاهد المزيد', 'mt-4')
-    
