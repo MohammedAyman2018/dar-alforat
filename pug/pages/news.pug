@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="ar" dir="rtl")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        //font awesome
+        script(src='https://kit.fontawesome.com/7ccf14bcd9.js')
+        // Tailwind
+        link(href='./css/tailwind.css' rel='stylesheet')
+        // google fonts
+        link(href='https://fonts.googleapis.com/css?family=Almarai:400,700,800|El+Messiri:400,500,600,700|Markazi+Text:400,500,600,700|Reem+Kufi&display=swap&subset=arabic' rel='stylesheet')
+        // Our css
+        link(rel='stylesheet' href='./css/home.css')
+        link(rel='shortcut icon' href='./img/logo.jpg' type='image/x-icon')
+        title دار الفرات | الأخبار
+    body
+        include ../components/loading
+        
+        include ../components/Navbar
+        +navbar(['','','','','active'])
+        .container.mx-auto.my-32.overflow-hidden
+            .flex.flex-wrap.my-16
+                .flex.flex-wrap.justify-center.w-full.mb-2.px-2
+                    include ../utils/header
+                    +header('آخر الأخبار')
+                .-mx-2
+                    .flex.flex-wrap.px-2
+                        - for(let i = 0; i < 12 ;i++){
+                            include ../utils/singleNews
+                            +card("w-full px-2 my-4 sm:w-1/2 lg:w-1/4")
+                        - }
+                include ../utils/pagenation
+
+        include ../components/Footer
+        
+        script(src='./js/move.js')
+        script(src='./js/scroll-out.js')
+        script(src='./js/app.js')

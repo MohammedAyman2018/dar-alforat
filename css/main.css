@@ -82,6 +82,10 @@ h2.header {
   display: inline-block;
 }
 
+.blue-text {
+  color: #17617A;
+}
+
 .blue {
   background-color: #17617A;
 }
