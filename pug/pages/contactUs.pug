@@ -13,15 +13,15 @@ html(lang="ar" dir="rtl")
         // Our css
         link(rel='stylesheet' href='./css/home.css')
         link(rel='shortcut icon' href='./img/logo.jpg' type='image/x-icon')
-        title دار الفرات | منافذ البيع
+        title دار الفرات | تواصل معنا
     body
         include ../components/loading
-
+        
 
         include ../components/Navbar
-        +navbar(['','','active','',''])
+        +navbar(['','','','active',''])
 
-        include ../components/Centers
+        include ../components/Form
         include ../components/Footer
         
         script(src='./js/move.js')
