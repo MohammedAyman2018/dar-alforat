@@ -1,5 +1,5 @@
 window.onload = function (){
-    //Animate();    
+    Animate();    
     ScrollOut();
 }
 
@@ -19,7 +19,7 @@ window.onscroll = function () {
             .set('background', 'transparent')
             .duration('0.7s')
             .end();
-
+        
         if (screen.width <= 640) {
             move(collapseDiv)
                 .set('background', 'black')

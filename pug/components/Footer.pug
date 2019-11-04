@@ -1,6 +1,46 @@
-footer.blue
-    .container
-        p
-        | &copy; 2016 |
-        i.fa.fa-value(aria-hidden='true') &nbsp;
-        a(href='#') View Source
+footer.blue.overflow-x-hidden.pt-16.pb-0
+    .container.mx-auto
+        .-mx-2
+            .flex.flex-wrap.px-2
+                .sections.px-2(class="w-1/2 md:w-1/4")
+                    p.header.text-white.font-bold.text-2xl.mb-4 أقسام الموقع
+                    ul
+                        each val in [ ['index.html' ,'الرئيسية'], ['sells.html' ,'منافذ البيع '], ['index' ,'الإصدارات'], ['index' ,'الأخبار'], ['index' ,'تواصل معنا']]
+                            li.my-4
+                                a.text-white.text-lg(href=val[0])=val[1]
+
+                .leastBooks.px-2(class="w-1/2 md:w-1/4")
+                    p.header.text-white.font-bold.text-2xl.mb-4 أحدث الإصدارات
+                    ul
+                        each name , index in ['الغريب المصنف','انت لي','شيفرة بلال']
+                            li.my-4
+                                a.book-thumb.flex(href="book.html")
+                                    .img(class="w-2/5 p-2")
+                                        img(src='./img/book'+(index+1)+'.png', alt="book")
+                                    .info.flex.flex-col.justify-center.items-left(class="w-3/5")
+                                        p.text-lg.font-bold.text-white.text-right=name
+                .leastNews.px-2(class="w-1/2 md:w-1/4")
+                    p.header.text-white.font-bold.text-2xl.mb-4 أحدث الإصدارات
+                    .flex.felx-wrap
+                        ul
+                            each name , index in ['الغريب المصنف','انت لي','شيفرة بلال']
+                                li.my-8
+                                    a.book-thumb.flex(href="single-news.html")
+                                        .img(class="w-32 p-2 h-32")
+                                            img(src='./img/book'+(index+1)+'.png', alt="book")
+                                        .info.flex.flex-col.justify-center.items-left(class="w-3/5")
+                                            p.text-lg.font-bold.text-white.text-right خبر مهم جداً
+                                            p.text-sm.text-gray-400.text-right 12/12/2012
+                .followus.px-2(class="w-1/2 md:w-1/4")
+                    p.header.text-white.font-bold.text-2xl.mb-4 تابعنا
+                    .flex.felx-wrap.flex-col
+                        ul
+                            li.inline-block.mx-3
+                                a.text-white.text-3xl(href="#") <i class="fab fa-facebook-square"></i>
+                            li.inline-block.mx-3
+                                a.text-white.text-3xl(href="#") <i class="fab fa-twitter"></i>
+                            li.inline-block.mx-3
+                                a.text-white.text-3xl(href="#") <i class="fab fa-instagram"></i>
+                        .footerlogo.w-full.my-16
+                            a(href="index.html")
+                                img.w-full(src="./img/logo.jpg", alt="alt")
