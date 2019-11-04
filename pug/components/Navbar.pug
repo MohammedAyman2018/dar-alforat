@@ -1,11 +1,11 @@
 mixin navbar(calasses)
     .container
-        nav.fixed.w-full.h-24.top-0.z-50
+        nav.fixed.w-full.h-24.top-0.z-40
             .flex.flex-wrap.justify-around.bug
                 .img.flex.justify-around.items-center(class="w-full sm:w-2/12")
                     img(src="./img/logo.jpg", class="h-24", alt="logo")
 
-                    i.mx-2.fas.fa-bars.text-white.text-lg#toggle(class="block sm:hidden")
+                    i.mx-2.fas.fa-bars.text-black.text-lg#toggle(class="block sm:hidden")
                 
                 .links#collapseable(class="w-50 mx-auto p-5 sm:mx-0 sm:w-auto sm:block sm:w-10/12 lg:w-7/12 z-50")
                     ul.h-full(class="block sm:flex sm:flex-wrap sm:items-center")
