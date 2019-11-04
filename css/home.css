@@ -95,6 +95,20 @@ h2.header {
   display: none;
 }
 
+.pagenation li {
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+.pagenation li.active, .pagenation li:hover {
+  background-color: #17617A;
+  color: white;
+}
+.pagenation li.disabled, .pagenation li.disabled a {
+  background-color: #E7E8EA;
+  color: gray;
+  cursor: not-allowed;
+}
+
 .links {
   background-color: transparent;
 }

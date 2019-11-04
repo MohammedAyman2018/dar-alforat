@@ -2,6 +2,10 @@ mixin card(classes)
     a.book(href='book.html', class=classes)
         .img
             img(src="./img/book1.png", style="min-width: 100%", alt="")
-        footer.p-2
-            span.text-white.text-lg.font-semibold الكاتب:
-            p.inline-block.text-center.text-white.text-lg.font-semibold عبيد القاسم بن سلام
+        footer.p-2.text-center
+            .writer
+                span.text-white.text-lg.font-normal الكاتب:
+                p.inline-block.text-center.text-white.text-lg.font-normal عبيد القاسم بن سلام.
+            .translator
+                span.text-white.text-md.font-normal المترجم:
+                p.inline-block.text-center.text-white.text-md.font-normal أبوحميد.

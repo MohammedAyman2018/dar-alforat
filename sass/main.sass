@@ -84,3 +84,17 @@ h2.header
   color: $main-blue
   display: none 
   // =========================  CONTROL HINT/VALIDATION HERE  =======================================================
+
+.pagenation
+  li
+    transition: all ease 0.2s
+    cursor: pointer
+    
+  li.active,li:hover
+    background-color: $main-blue
+    color: white
+
+  li.disabled,li.disabled a
+      background-color: $main-white
+      color: gray
+      cursor: not-allowed

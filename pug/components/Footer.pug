@@ -1,14 +1,13 @@
-footer.blue.overflow-x-hidden.pt-16.pb-0
+footer.blue.overflow-hidden.pt-16.pb-0
     .container.mx-auto
         .-mx-2
             .flex.flex-wrap.px-2
                 .sections.px-2(data-scroll='', class="w-1/2 md:w-1/4")
                     p.header.text-white.font-bold.text-2xl.mb-4 أقسام الموقع
                     ul
-                        each val in [ ['index.html' ,'الرئيسية'], ['sells.html' ,'منافذ البيع '], ['index' ,'الإصدارات'], ['index' ,'الأخبار'], ['index' ,'تواصل معنا']]
+                        each val in [ ['index.html' ,'الرئيسية'], ['sells.html' ,'منافذ البيع '], ['books.html' ,'الإصدارات'], ['news.html' ,'الأخبار'], ['contactUs.html' ,'تواصل معنا']]
                             li.my-4
                                 a.text-white.text-lg(href=val[0])=val[1]
-
                 .leastBooks.px-2(data-scroll='' ,class="w-1/2 md:w-1/4")
                     p.header.text-white.font-bold.text-2xl.mb-4 أحدث الإصدارات
                     ul

@@ -13,7 +13,7 @@
     <!-- Our css-->
     <link rel="stylesheet" href="./css/home.css"/>
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon"/>
-    <title>دار الفرات | الرئيسية</title>
+    <title>دار الفرات | الإصدارات</title>
   </head>
   <body>
     <div class="preload z-50">
@@ -26,8 +26,8 @@
               <div class="img flex justify-around items-center w-full sm:w-2/12"><img class="h-24" src="./img/logo.jpg" alt="logo"/><i class="mx-2 fas fa-bars text-black text-lg block sm:hidden" id="toggle"></i></div>
               <div class="links w-50 mx-auto p-5 sm:mx-0 sm:w-auto sm:block sm:w-10/12 lg:w-7/12 z-50" id="collapseable">
                 <ul class="h-full block sm:flex sm:flex-wrap sm:items-center">
-                  <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a class="active" href="index.html">الرئيسية</a></li>
-                  <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="books.html">الإصدارات</a></li>
+                  <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="index.html">الرئيسية</a></li>
+                  <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a class="active" href="books.html">الإصدارات</a></li>
                   <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="sells.html">منافذ البيع</a></li>
                   <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="contactUs.html">تواصل معنا</a></li>
                   <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="news.html">الأخبار</a></li>
@@ -36,15 +36,11 @@
             </div>
           </nav>
         </div>
-    <div class="banner flex flex-wrap justify-center items-center">
-      <main class="text-white z-30 font-semibold text-center text-lg ms:text-xl md:text-3xl lg:text-4xl" data-scroll="">
-        <h1>دار الفرات للنشر والتوزيع <br> هدفنا إحياء التراث العربي و إثراء المكتبة العربية</h1>
-                <button class="p-2 px-8 text-white text-lg font-normal text-lg text-white my-4">تصفح الكتب</button>
-      </main><i class="scroll fas fa-angle-double-down text-white text-3xl z-40"></i>
-    </div>
-    <div class="leatstBooks my-32 text-center overflow-x-hidden" data-scroll="">
-            <h2 class="text-center font-extrabold text-3xl my-3 header relative">آخر إصداراتنا</h2>
-      <div class="container mx-auto mt-8">
+    <div class="container mx-auto my-32 overflow-x-hidden">
+      <div class="flex flex-wrap my-16">
+        <div class="flex flex-wrap justify-between w-full">
+                    <h2 class="text-center font-extrabold text-3xl my-3 header relative">قسم ما</h2><a class="text-gray-500 self-center" href="allBooks.html">مشاهدة جميع الكتب</a>
+        </div>
         <div class="-mx-2">
           <div class="flex flex-wrap px-2"><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
                           <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
@@ -86,11 +82,10 @@
           </div>
         </div>
       </div>
-            <button class="p-2 px-8 text-white text-lg font-normal mt-4">شاهد المزيد</button>
-    </div>
-    <div class="recommended my-32 text-center overflow-x-hidden" data-scroll="">
-            <h2 class="text-center font-extrabold text-3xl my-3 header relative">كتب يُنصَح بها</h2>
-      <div class="container mx-auto mt-8">
+      <div class="flex flex-wrap my-16">
+        <div class="flex flex-wrap justify-between w-full">
+                    <h2 class="text-center font-extrabold text-3xl my-3 header relative">قسم ما</h2><a class="text-gray-500 self-center" href="allBooks.html">مشاهدة جميع الكتب</a>
+        </div>
         <div class="-mx-2">
           <div class="flex flex-wrap px-2"><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
                           <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
@@ -132,126 +127,96 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="leatstBooks my-32 text-center overflow-x-hidden" data-scroll="">
-            <h2 class="text-center font-extrabold text-3xl my-3 header relative">منافذ البيع</h2>
-      <div class="container mx-auto mt-8">
+      <div class="flex flex-wrap my-16">
+        <div class="flex flex-wrap justify-between w-full">
+                    <h2 class="text-center font-extrabold text-3xl my-3 header relative">قسم ما</h2><a class="text-gray-500 self-center" href="allBooks.html">مشاهدة جميع الكتب</a>
+        </div>
         <div class="-mx-2">
-          <div class="flex flex-wrap px-2">
-            <div class="center my-4 w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
-              <header class="h-32 flex justify-center items-center border border-black border-b-0">
-                <h2 class="font-bold text-xl">اسم المكتبة</h2>
-              </header>
-              <footer class="py-2 blue">
-                <p class="inline-block text-center text-white text-lg font-semibold">مصر- الشرقية - منية القمح - شارع المهندسين.</p>
-              </footer>
-            </div>
-            <div class="center my-4 w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
-              <header class="h-32 flex justify-center items-center border border-black border-b-0">
-                <h2 class="font-bold text-xl">اسم المكتبة</h2>
-              </header>
-              <footer class="py-2 blue">
-                <p class="inline-block text-center text-white text-lg font-semibold">مصر- الشرقية - منية القمح - شارع المهندسين.</p>
-              </footer>
-            </div>
-            <div class="center my-4 w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
-              <header class="h-32 flex justify-center items-center border border-black border-b-0">
-                <h2 class="font-bold text-xl">اسم المكتبة</h2>
-              </header>
-              <footer class="py-2 blue">
-                <p class="inline-block text-center text-white text-lg font-semibold">مصر- الشرقية - منية القمح - شارع المهندسين.</p>
-              </footer>
-            </div>
-            <div class="center my-4 w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
-              <header class="h-32 flex justify-center items-center border border-black border-b-0">
-                <h2 class="font-bold text-xl">اسم المكتبة</h2>
-              </header>
-              <footer class="py-2 blue">
-                <p class="inline-block text-center text-white text-lg font-semibold">مصر- الشرقية - منية القمح - شارع المهندسين.</p>
-              </footer>
-            </div>
-            <div class="center my-4 w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
-              <header class="h-32 flex justify-center items-center border border-black border-b-0">
-                <h2 class="font-bold text-xl">اسم المكتبة</h2>
-              </header>
-              <footer class="py-2 blue">
-                <p class="inline-block text-center text-white text-lg font-semibold">مصر- الشرقية - منية القمح - شارع المهندسين.</p>
-              </footer>
-            </div>
-            <div class="center my-4 w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
-              <header class="h-32 flex justify-center items-center border border-black border-b-0">
-                <h2 class="font-bold text-xl">اسم المكتبة</h2>
-              </header>
-              <footer class="py-2 blue">
-                <p class="inline-block text-center text-white text-lg font-semibold">مصر- الشرقية - منية القمح - شارع المهندسين.</p>
-              </footer>
-            </div>
-            <div class="center my-4 w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
-              <header class="h-32 flex justify-center items-center border border-black border-b-0">
-                <h2 class="font-bold text-xl">اسم المكتبة</h2>
-              </header>
-              <footer class="py-2 blue">
-                <p class="inline-block text-center text-white text-lg font-semibold">مصر- الشرقية - منية القمح - شارع المهندسين.</p>
-              </footer>
-            </div>
-            <div class="center my-4 w-full px-2 my-2 sm:w-1/2 lg:w-1/4">
-              <header class="h-32 flex justify-center items-center border border-black border-b-0">
-                <h2 class="font-bold text-xl">اسم المكتبة</h2>
-              </header>
-              <footer class="py-2 blue">
-                <p class="inline-block text-center text-white text-lg font-semibold">مصر- الشرقية - منية القمح - شارع المهندسين.</p>
-              </footer>
-            </div>
+          <div class="flex flex-wrap px-2"><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
+                          <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
+                          <footer class="p-2 text-center">
+                            <div class="writer"><span class="text-white text-lg font-normal">الكاتب:</span>
+                              <p class="inline-block text-center text-white text-lg font-normal">عبيد القاسم بن سلام.</p>
+                            </div>
+                            <div class="translator"><span class="text-white text-md font-normal">المترجم:</span>
+                              <p class="inline-block text-center text-white text-md font-normal">أبوحميد.</p>
+                            </div>
+                          </footer></a><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
+                          <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
+                          <footer class="p-2 text-center">
+                            <div class="writer"><span class="text-white text-lg font-normal">الكاتب:</span>
+                              <p class="inline-block text-center text-white text-lg font-normal">عبيد القاسم بن سلام.</p>
+                            </div>
+                            <div class="translator"><span class="text-white text-md font-normal">المترجم:</span>
+                              <p class="inline-block text-center text-white text-md font-normal">أبوحميد.</p>
+                            </div>
+                          </footer></a><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
+                          <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
+                          <footer class="p-2 text-center">
+                            <div class="writer"><span class="text-white text-lg font-normal">الكاتب:</span>
+                              <p class="inline-block text-center text-white text-lg font-normal">عبيد القاسم بن سلام.</p>
+                            </div>
+                            <div class="translator"><span class="text-white text-md font-normal">المترجم:</span>
+                              <p class="inline-block text-center text-white text-md font-normal">أبوحميد.</p>
+                            </div>
+                          </footer></a><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
+                          <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
+                          <footer class="p-2 text-center">
+                            <div class="writer"><span class="text-white text-lg font-normal">الكاتب:</span>
+                              <p class="inline-block text-center text-white text-lg font-normal">عبيد القاسم بن سلام.</p>
+                            </div>
+                            <div class="translator"><span class="text-white text-md font-normal">المترجم:</span>
+                              <p class="inline-block text-center text-white text-md font-normal">أبوحميد.</p>
+                            </div>
+                          </footer></a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="form my-32 text-center overflow-x-hidden" data-scroll="">
-            <h2 class="text-center font-extrabold text-3xl my-3 header relative">تواصل معنا</h2>
-      <form action="#" method="method">
-        <div class="container mx-auto mt-8">
-          <div class="-mx-2">
-            <div class="flex flex-wrap px-2">
-              <div class="left w-full md:w-1/2 px-2">
-                <div class="control w-full mb-8">
-                  <!--  label / input  -->
-                                    <div class="input">
-                                      <label class="block font-bold text-xl text-right my-2" for="name">الإسم:</label>
-                                      <input class="py-4 px-3 text-gray-800 font-semibold bg-gray-300 w-full" type="text" placeholder="اكتب اسمك" required="required"/>
-                                      <p class="hint text-right my-3">رسالة توضيحية</p>
-                                    </div>
-                </div>
-                <div class="control w-full mb-8">
-                  <!--  label / input  -->
-                                    <div class="input">
-                                      <label class="block font-bold text-xl text-right my-2" for="phone">رقم الهاتف:</label>
-                                      <input class="py-4 px-3 text-gray-800 font-semibold bg-gray-300 w-full" type="tel" placeholder="اكتب رقم هاتفك" pattern="[0-9]{11}" required="required"/>
-                                      <p class="hint text-right my-3">رسالة توضيحية</p>
-                                    </div>
-                </div>
-                <div class="control w-full mb-8">
-                  <!-- label / input  -->
-                                    <div class="input">
-                                      <label class="block font-bold text-xl text-right my-2" for="email">البريد الالكتروني:</label>
-                                      <input class="py-4 px-3 text-gray-800 font-semibold bg-gray-300 w-full" type="email" placeholder="مثال : example@example.com" required="required"/>
-                                      <p class="hint text-right my-3">رسالة توضيحية</p>
-                                    </div>
-                </div>
-              </div>
-              <div class="right w-full md:w-1/2 px-2">
-                <div class="control mr-0 md:mr-2">
-                                    <div class="input">
-                                      <label class="block font-bold text-xl text-right my-2" for="info">رسالتك:</label>
-                                      <textarea class="py-4 px-3 text-gray-800 font-semibold bg-gray-300 w-full" id="info" name="info" placeholder="لتكن رسالتك بناءة" cols="30" rows="9"></textarea>
-                                      <p class="hint text-right my-3">رسالة توضيحية</p>
-                                    </div>
-                </div>
-                                  <button class="p-2 px-8 text-white text-lg font-normal mt-4" type="submit">ارسل</button>
-              </div>
-            </div>
+      <div class="flex flex-wrap my-16">
+        <div class="flex flex-wrap justify-between w-full">
+                    <h2 class="text-center font-extrabold text-3xl my-3 header relative">قسم ما</h2><a class="text-gray-500 self-center" href="allBooks.html">مشاهدة جميع الكتب</a>
+        </div>
+        <div class="-mx-2">
+          <div class="flex flex-wrap px-2"><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
+                          <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
+                          <footer class="p-2 text-center">
+                            <div class="writer"><span class="text-white text-lg font-normal">الكاتب:</span>
+                              <p class="inline-block text-center text-white text-lg font-normal">عبيد القاسم بن سلام.</p>
+                            </div>
+                            <div class="translator"><span class="text-white text-md font-normal">المترجم:</span>
+                              <p class="inline-block text-center text-white text-md font-normal">أبوحميد.</p>
+                            </div>
+                          </footer></a><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
+                          <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
+                          <footer class="p-2 text-center">
+                            <div class="writer"><span class="text-white text-lg font-normal">الكاتب:</span>
+                              <p class="inline-block text-center text-white text-lg font-normal">عبيد القاسم بن سلام.</p>
+                            </div>
+                            <div class="translator"><span class="text-white text-md font-normal">المترجم:</span>
+                              <p class="inline-block text-center text-white text-md font-normal">أبوحميد.</p>
+                            </div>
+                          </footer></a><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
+                          <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
+                          <footer class="p-2 text-center">
+                            <div class="writer"><span class="text-white text-lg font-normal">الكاتب:</span>
+                              <p class="inline-block text-center text-white text-lg font-normal">عبيد القاسم بن سلام.</p>
+                            </div>
+                            <div class="translator"><span class="text-white text-md font-normal">المترجم:</span>
+                              <p class="inline-block text-center text-white text-md font-normal">أبوحميد.</p>
+                            </div>
+                          </footer></a><a class="book w-full px-2 my-2 sm:w-1/2 lg:w-1/4" href="book.html">
+                          <div class="img"><img src="./img/book1.png" style="min-width: 100%" alt=""/></div>
+                          <footer class="p-2 text-center">
+                            <div class="writer"><span class="text-white text-lg font-normal">الكاتب:</span>
+                              <p class="inline-block text-center text-white text-lg font-normal">عبيد القاسم بن سلام.</p>
+                            </div>
+                            <div class="translator"><span class="text-white text-md font-normal">المترجم:</span>
+                              <p class="inline-block text-center text-white text-md font-normal">أبوحميد.</p>
+                            </div>
+                          </footer></a>
           </div>
         </div>
-      </form>
+      </div>
     </div>
     <footer class="blue overflow-hidden pt-16 pb-0">
       <div class="container mx-auto">
@@ -330,6 +295,5 @@
     <script src="./js/move.js"></script>
     <script src="./js/scroll-out.js"></script>
     <script src="./js/app.js"></script>
-    <script src="./js/home.js"></script>
   </body>
 </html>
