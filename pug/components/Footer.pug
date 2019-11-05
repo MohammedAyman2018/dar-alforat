@@ -2,14 +2,14 @@ footer.blue.overflow-hidden.pt-16.pb-0
     .container.mx-auto
         .-mx-2
             .flex.flex-wrap.px-2
-                .sections.px-2(data-scroll='', class="w-1/2 md:w-1/4")
-                    p.header.text-white.font-bold.text-2xl.mb-4 أقسام الموقع
+                .sections.px-2(data-scroll='', class="w-full md:w-1/4")
+                    p.header.text-white.font-semibold.text-2xl.mb-4(class="text-lg md:text-2xl") أقسام الموقع
                     ul
                         each val in [ ['index.html' ,'الرئيسية'], ['sells.html' ,'منافذ البيع '], ['books.html' ,'الإصدارات'], ['news.html' ,'الأخبار'], ['contactUs.html' ,'تواصل معنا']]
                             li.my-4
                                 a.text-white.text-lg(href=val[0])=val[1]
-                .leastBooks.px-2(data-scroll='' ,class="w-1/2 md:w-1/4")
-                    p.header.text-white.font-bold.text-2xl.mb-4 أحدث الإصدارات
+                .leastBooks.px-2(data-scroll='' ,class="w-full md:w-1/4")
+                    p.header.text-white.font-semibold.text-2xl.mb-4(class="text-lg md:text-2xl") أحدث الإصدارات
                     ul
                         each name , index in ['الغريب المصنف','انت لي','شيفرة بلال']
                             li.my-4
@@ -17,9 +17,9 @@ footer.blue.overflow-hidden.pt-16.pb-0
                                     .img(class="w-2/5 p-2")
                                         img(src='./img/book'+(index+1)+'.png', alt="book")
                                     .info.flex.flex-col.justify-center.items-left(class="w-3/5")
-                                        p.text-lg.font-bold.text-white.text-right=name
-                .leastNews.px-2(data-scroll='' ,class="w-1/2 md:w-1/4")
-                    p.header.text-white.font-bold.text-2xl.mb-4 أحدث الإصدارات
+                                        p.text-lg.text-white.text-right=name
+                .leastNews.px-2(data-scroll='' ,class="w-full md:w-1/4")
+                    p.header.text-white.font-semibold.text-2xl.mb-4(class="text-lg md:text-2xl") أحدث الإصدارات
                     .flex.felx-wrap
                         ul
                             each name , index in ['الغريب المصنف','انت لي','شيفرة بلال']
@@ -28,10 +28,10 @@ footer.blue.overflow-hidden.pt-16.pb-0
                                         .img(class="w-32 p-2 h-32")
                                             img(src='./img/book'+(index+1)+'.png', alt="book")
                                         .info.flex.flex-col.justify-center.items-left(class="w-3/5")
-                                            p.text-lg.font-bold.text-white.text-right خبر مهم جداً
+                                            p.text-lg.text-white.text-right خبر مهم جداً
                                             p.text-sm.text-gray-400.text-right 12/12/2012
-                .followus.px-2(data-scroll='' ,class="w-1/2 md:w-1/4")
-                    p.header.text-white.font-bold.text-2xl.mb-4 تابعنا
+                .followus.px-2(data-scroll='' ,class="w-full md:w-1/4")
+                    p.header.text-white.font-semibold.text-2xl.mb-4(class="text-lg md:text-2xl") تابعنا
                     .flex.felx-wrap.flex-col
                         ul
                             li.inline-block.mx-3

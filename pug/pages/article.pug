@@ -21,10 +21,10 @@ html(lang="ar" dir="rtl")
         +navbar(['','','','','active'])
 
         .container.mx-auto.my-32.overflow-hidden
-            .-mx-2.flex.flex-wrap
-                .img.px-2(class='w-2/5')
+            .-mx-2.flex.flex-wrap.px-2
+                .img.px-2(class='w-full sm:w-2/5')
                     img(src="https://placeimg.com/640/480/nature/sepia", alt="alt")
-                article.px-2(class='w-3/5')
+                article.px-2(class='w-full sm:w-3/5')
                     include ../utils/header
                     +header('مقال شقي')
                     p <b>اظهر الاهتمام</b>
