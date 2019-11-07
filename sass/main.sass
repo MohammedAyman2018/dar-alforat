@@ -1,3 +1,9 @@
+@tailwind base
+
+@tailwind components
+
+@tailwind utilities
+
 $main-blue: #17617A
 $main-white: #E7E8EA
 
@@ -43,7 +49,11 @@ body,html
   transform: translateY(200px)
 
 
-// Navbar responsive
+// Navbar 
+nav .links ul li a
+  transition: all 0.2s ease
+  &:hover
+    color: $main-blue !important
 @media screen and ( max-width: 640px )
   nav .links 
     transform: translateX(-640px)
@@ -51,7 +61,7 @@ body,html
       padding: 20px 0
 
 // general button styles
-button
+a.ourbtn,button
   background-color: darken($main-blue, 5)
   transition: all 0.4s ease
   &:hover
@@ -98,3 +108,55 @@ h2.header
       background-color: $main-white
       color: gray
       cursor: not-allowed
+
+.links
+    background-color: transparent
+    ul li a 
+        color: black
+nav
+  background: $main-white
+
+.banner
+    background-image: url('../img/banner.png')
+    height: 100vh
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: rgba(0,0,0,0.6)
+    .scroll
+        animation-name: scroll
+        animation-duration: 0.8s
+        animation-iteration-count: infinite
+        animation-timing-function: ease-out
+
+        position: absolute
+        bottom: 50px
+        left: 50% 
+
+.book , .news
+    transition: all 0.4s ease-out
+    &:hover
+        -webkit-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75)
+        -moz-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75)
+        box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75)
+        transform: translateY(-10px)
+    footer
+        background-color: $main-blue
+
+.news footer
+    background-color: transparent
+@keyframes scroll
+    0%
+        transform: translateY(-10px)
+    100%
+        transform: translateY(10px)
+
+footer .sections ul li a
+  transition: all 0.2s ease
+  &:hover
+    border-bottom: 1px solid #fff

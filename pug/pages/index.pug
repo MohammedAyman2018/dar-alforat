@@ -7,12 +7,10 @@ html(lang="ar" dir="rtl")
         //font awesome
         script(src='https://kit.fontawesome.com/7ccf14bcd9.js')
         // Tailwind
-        link(href='./css/tailwind.css' rel='stylesheet')
+        link(href='../public/tailwind.css' rel='stylesheet')
         // google fonts
         link(href='https://fonts.googleapis.com/css?family=Almarai:400,700,800|El+Messiri:400,500,600,700|Markazi+Text:400,500,600,700|Reem+Kufi&display=swap&subset=arabic' rel='stylesheet')
-        // Our css
-        link(rel='stylesheet' href='./css/home.css')
-        link(rel='shortcut icon' href='./img/logo.jpg' type='image/x-icon')
+        link(rel='shortcut icon' href='../img/logo.jpg' type='image/x-icon')
         title دار الفرات | الرئيسية
     body
         include ../components/loading
@@ -24,16 +22,16 @@ html(lang="ar" dir="rtl")
             main.text-white.z-30.font-semibold.text-center(class="text-lg ms:text-xl md:text-3xl lg:text-4xl" data-scroll='')
                 h1 دار الفرات للنشر والتوزيع <br> هدفنا إحياء التراث العربي و إثراء المكتبة العربية
                 include ../utils/ourButton
-                +btn('تصفح الكتب', 'text-lg text-white my-4')
+                +btn('تصفح الكتب', 'text-lg text-white my-4')(href="books.html")
 
-            i.scroll.fas.fa-angle-double-down.text-white.text-3xl.z-40
+            i.scroll.fas.fa-angle-double-down.text-white.text-3xl.z-30
         include ../components/leatestBooks
         include ../components/Recommended
         include ../components/Centers
         include ../components/Form
         include ../components/Footer
         
-        script(src='./js/move.js')
-        script(src='./js/scroll-out.js')
-        script(src='./js/app.js')
-        script(src='./js/home.js')
+        script(src='../js/move.js')
+        script(src='../js/scroll-out.js')
+        script(src='../js/app.js')
+        script(src='../js/home.js')

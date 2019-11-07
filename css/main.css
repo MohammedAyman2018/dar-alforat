@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body, html {
   background-color: #fafafaf3;
 }
@@ -45,6 +48,13 @@ body, html {
   transform: translateY(200px);
 }
 
+nav .links ul li a {
+  transition: all 0.2s ease;
+}
+nav .links ul li a:hover {
+  color: #17617A !important;
+}
+
 @media screen and (max-width: 640px) {
   nav .links {
     transform: translateX(-640px);
@@ -53,14 +63,14 @@ body, html {
     padding: 20px 0;
   }
 }
-button {
+a.ourbtn, button {
   background-color: #135065;
   transition: all 0.4s ease;
 }
-button:hover {
+a.ourbtn:hover, button:hover {
   background-color: #1b728f;
 }
-button:focus, button:active {
+a.ourbtn:focus, a.ourbtn:active, button:focus, button:active {
   outline: none;
 }
 
@@ -111,6 +121,73 @@ h2.header {
   background-color: #E7E8EA;
   color: gray;
   cursor: not-allowed;
+}
+
+.links {
+  background-color: transparent;
+}
+.links ul li a {
+  color: black;
+}
+
+nav {
+  background: #E7E8EA;
+}
+
+.banner {
+  background-image: url("../img/banner.png");
+  height: 100vh;
+  position: relative;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.banner .scroll {
+  animation-name: scroll;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+}
+
+.book, .news {
+  transition: all 0.4s ease-out;
+}
+.book:hover, .news:hover {
+  -webkit-box-shadow: 10px 10px 25px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 25px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 25px -8px rgba(0, 0, 0, 0.75);
+  transform: translateY(-10px);
+}
+.book footer, .news footer {
+  background-color: #17617A;
+}
+
+.news footer {
+  background-color: transparent;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+footer .sections ul li a {
+  transition: all 0.2s ease;
+}
+footer .sections ul li a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

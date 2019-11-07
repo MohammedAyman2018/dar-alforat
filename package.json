@@ -1,0 +1,22 @@
+{
+  "name": "dar-alforat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/main.css -o public/tailwind.css",
+    "watch": "watch 'npm run build' ./layouts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "autoprefixer": "^9.7.1",
+    "tailwindcss": "^1.1.3",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}

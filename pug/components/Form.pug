@@ -19,5 +19,4 @@
                     .right(class="w-full md:w-1/2 px-2")
                         .control(class="mr-0 md:mr-2")
                             +textarea( { name: 'info', text: 'رسالتك:'} , {id:'info',name: 'info', placeholder: "لتكن رسالتك بناءة"}, 'رسالة توضيحية')( cols="30", rows="9")
-                            include ../utils/ourButton
-                        +btn('ارسل', 'mt-4')(type="submit")
+                        button.inline-block.p-2.px-8.text-white.text-lg.font-normal.mt-4(type="submit") ارسل
