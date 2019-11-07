@@ -183,6 +183,16 @@ nav {
     transform: translateY(10px);
   }
 }
+hr {
+  background: #fff !important;
+  border: 2px solid white !important;
+  border-style: inset !important;
+  border-width: 1px !important;
+}
+
+footer {
+  padding: 0 0 10px 0;
+}
 footer .sections ul li a {
   transition: all 0.2s ease;
 }

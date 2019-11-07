@@ -10,8 +10,8 @@ module.exports = {
       ],
       defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
     }),
-    require('cssnano')({
-      preset: 'default',
-    }),
+    // require('cssnano')({
+    //   preset: 'default',
+    // }),
   ]
 }
