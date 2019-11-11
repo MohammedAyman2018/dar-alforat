@@ -20,7 +20,7 @@ html(lang="ar" dir="rtl")
         include ../components/loading
         
         include ../components/Navbar
-        +navbar(['','','','','active'])
+        +navbar(['','active','','',''])
 
         .container.mx-auto.my-32.overflow-hidden
             .-mx-2.flex.flex-wrap.px-2.my-16
@@ -47,7 +47,7 @@ html(lang="ar" dir="rtl")
         .container.mx-auto.mb-32.overflow-hidden        
             .-mx-2.flex.flex-wrap.px-2
                 .label.px-2
-                    +header('أضف تعليقاً')
+                    +header('التعليقات')
                 - for(let i = 0; i < 4;i++){
                     .comment.px-2.py-6(class="w-full", data-scroll='')
                         .border.rounded-lg
@@ -60,8 +60,13 @@ html(lang="ar" dir="rtl")
                             footer.my-4
                                 p.text-lg.mx-2.font-bold حب شب بين طفلة و وطفل.... وبقي فيهما رغم البعد.... وحين غدت الطفلة انثى و الطفل رجل .... قست عليهما الظروف اكثر... وعند كل محطة من محطات حياتهما كانا يفترقان... الا انهما وفي المحطة الاخيرة التقيا وللابد... هذا هو الحب... لا يموت رغم الظروف... لايخنع للمصاعب.... ويحتفظ ببريق وجوده حتى اخر لحظة..
                 - }
+            .label.px-2
+                +header('أضف تعليقاً')
+            form(action="#", method="post")
+                textarea(required, id="addComment",name="addComment", class='py-4 px-3 text-gray-800 font-semibold bg-gray-300 w-full', row="60", col="10" placeholder="ليكن تعليقك بناءً")
+                button.block.p-2.px-8.text-white.text-lg.font-normal.mt-4.mx-auto(type="submit") أضف
         include ../components/Footer
-        
+                    
         script(src='./js/move.js')
         script(src='./js/scroll-out.js')
         script(src='./js/app.js')

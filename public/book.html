@@ -26,10 +26,10 @@
               <div class="links w-50 mx-auto p-5 sm:mx-0 sm:w-auto sm:block sm:w-10/12 lg:w-7/12 z-50" id="collapseable">
                 <ul class="h-full block sm:flex sm:flex-wrap sm:items-center">
                   <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="index.html">الرئيسية</a></li>
-                  <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="books.html">الإصدارات</a></li>
+                  <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a class="active" href="books.html">الإصدارات</a></li>
                   <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="sells.html">منافذ البيع</a></li>
                   <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="contactUs.html">تواصل معنا</a></li>
-                  <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a class="active" href="news.html">الأخبار</a></li>
+                  <li class="align-middle flex-1 text-white font-bold block py-2 text-center sm:py-0 sm:inline-block sm:mr-6"><a href="news.html">الأخبار</a></li>
                 </ul>
               </div>
             </div>
@@ -52,7 +52,7 @@
     <div class="container mx-auto mb-32 overflow-hidden">       
       <div class="-mx-2 flex flex-wrap px-2">
         <div class="label px-2">
-                    <h2 class="text-center font-extrabold text-3xl my-3 header relative">أضف تعليقاً</h2>
+                    <h2 class="text-center font-extrabold text-3xl my-3 header relative">التعليقات</h2>
         </div>
         <div class="comment px-2 py-6 w-full" data-scroll="">
           <div class="border rounded-lg">
@@ -111,6 +111,13 @@
           </div>
         </div>
       </div>
+      <div class="label px-2">
+                  <h2 class="text-center font-extrabold text-3xl my-3 header relative">أضف تعليقاً</h2>
+      </div>
+      <form action="#" method="post">
+        <textarea class="py-4 px-3 text-gray-800 font-semibold bg-gray-300 w-full" required="required" id="addComment" name="addComment" row="60" col="10" placeholder="ليكن تعليقك بناءً"></textarea>
+        <button class="block p-2 px-8 text-white text-lg font-normal mt-4 mx-auto" type="submit">أضف</button>
+      </form>
     </div>
     <footer class="blue overflow-hidden pt-16 pb-0">
       <div class="container mx-auto">
