@@ -6,9 +6,9 @@ html(lang="ar" dir="rtl")
         meta(http-equiv='X-UA-Compatible' content='ie=edge')
         //font awesome
         script(src='https://kit.fontawesome.com/7ccf14bcd9.js')
-        // Tailwind
-        link(href='../public/edits.css' rel='stylesheet')
-        link(href='../public/tailwind.css' rel='stylesheet')
+        // app
+        link(href='./css/edits.css' rel='stylesheet')
+        link(href='./css/app.css' rel='stylesheet')
 
         
         link(href='https://fonts.googleapis.com/css?family=Almarai:400,700,800|El+Messiri:400,500,600,700|Markazi+Text:400,500,600,700|Reem+Kufi&display=swap&subset=arabic' rel='stylesheet')
@@ -25,7 +25,7 @@ html(lang="ar" dir="rtl")
         .container.mx-auto.my-32.overflow-hidden
             .-mx-2.flex.flex-wrap.px-2.my-16
                 .img.px-2(class='w-full text-center  sm:w-1/5')
-                    img(src="../img/book2.png",class="mx-auto sm:mx-0", alt="alt")
+                    img(src="./img/book2.png",class="mx-auto sm:mx-0", alt="alt")
                 article.px-2(class='w-full sm:w-4/5')
                     include ../utils/header
                     +header('أنت لي ')
@@ -53,7 +53,7 @@ html(lang="ar" dir="rtl")
                         .border.rounded-lg
                             header.flex
                                 .img.overflow-hidden(class="w-24 p-2 h-24")
-                                    img(src='../img/book1.png',  alt="book")
+                                    img(src='./img/book1.png',  alt="book")
                                 .info.flex.flex-col.justify-center.items-left(class="w-3/5")
                                     p.text-lg.text-right أبوحميد    
                                     p.text-sm.text-gray-400.text-right 12/12/2012
@@ -62,6 +62,6 @@ html(lang="ar" dir="rtl")
                 - }
         include ../components/Footer
         
-        script(src='../js/move.js')
-        script(src='../js/scroll-out.js')
-        script(src='../js/app.js')
+        script(src='./js/move.js')
+        script(src='./js/scroll-out.js')
+        script(src='./js/app.js')

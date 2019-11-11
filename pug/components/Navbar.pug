@@ -2,8 +2,9 @@ mixin navbar(calasses)
     .container
         nav.fixed.w-full.h-24.top-0.z-40
             .flex.flex-wrap.justify-around.bug
-                a.img.flex.justify-around.items-center(class="w-full sm:w-2/12", href="./index.html")
-                    img(src="../img/logo.jpg", class="h-24", alt="logo")
+                .img.flex.justify-around.items-center(class="w-full sm:w-2/12")
+                    a( href="./index.html")
+                        img(src="./img/logo.jpg", class="h-24", alt="logo")
 
                     i.mx-2.fas.fa-bars.text-black.text-lg#toggle(class="block sm:hidden")
                 
