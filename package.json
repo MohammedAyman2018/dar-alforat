@@ -4,9 +4,9 @@
   "description": "",
   "main": "./layouts/index.html",
   "scripts": {
-    "build": "postcss ./css/main.css -o ./public/css/app.css",
+    "build": "postcss ./css/main.css -o ./public/css/app.css -w",
     "pug" : " pug ./pug/pages --watch -o ./public --pretty ",
-    "sass" : "sass --watch ./sass:./css"
+    "sass" : "sass ./sass/main.sass:./css/main.css"
   },
   "keywords": [],
   "author": "Mohammed Ayman Mohammed",

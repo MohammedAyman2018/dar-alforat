@@ -1,14 +1,14 @@
 mixin navbar(calasses)
     .container
-        nav.fixed.w-full.h-24.top-0.z-40
+        nav.fixed.w-full.h-16.top-0.z-40
             .flex.flex-wrap.justify-around.bug
                 .img.flex.justify-around.items-center(class="w-full sm:w-2/12")
                     a( href="./index.html")
-                        img(src="./img/logo.jpg", class="h-24", alt="logo")
+                        img(src="./img/logo.jpg", class="h-16", alt="logo")
 
-                    i.mx-2.fas.fa-bars.text-black.text-lg#toggle(class="block sm:hidden")
+                    i.mx-2.fas.fa-bars.text-lg#toggle(class="block sm:hidden")
                 
-                .links#collapseable(class="w-50 mx-auto p-5 sm:mx-0 sm:w-auto sm:block sm:w-10/12 lg:w-7/12 z-50")
+                .links#collapseable(class="w-50 left-0 p-5 sm:mx-0 sm:w-auto sm:block sm:w-10/12 lg:w-7/12 z-50")
                     ul.h-full(class="block sm:flex sm:flex-wrap sm:items-center")
                         li.align-middle.flex-1.text-white.font-bold(class="block py-2 text-center sm:py-0 sm:inline-block sm:mr-6")
                             a(href="index.html" class=calasses[0]) الرئيسية
@@ -20,3 +20,5 @@ mixin navbar(calasses)
                             a(href="contactUs.html" class=calasses[3]) تواصل معنا
                         li.align-middle.flex-1.text-white.font-bold(class="block py-2 text-center sm:py-0 sm:inline-block sm:mr-6")
                             a(href="news.html" class=calasses[4]) الأخبار
+                        li.align-middle.flex-1.text-white.font-bold(class="block py-2 text-center sm:py-0 sm:inline-block sm:mr-6")
+                            a(href="login.html") أبوحميد

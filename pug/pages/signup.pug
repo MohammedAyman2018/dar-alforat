@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="ar" dir="rtl")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+
+        //font awesome
+        script(src='https://kit.fontawesome.com/7ccf14bcd9.js')
+        // app
+        link(href='./css/edits.css' rel='stylesheet')
+        link(href='./css/app.css' rel='stylesheet')
+
+        link(href='https://fonts.googleapis.com/css?family=Almarai:400,700,800|El+Messiri:400,500,600,700|Markazi+Text:400,500,600,700|Reem+Kufi&display=swap&subset=arabic' rel='stylesheet')
+        // Our css
+        
+        link(rel='shortcut icon' href='../img/logo.jpg' type='image/x-icon')
+        title دار الفرات | الإصدارات
+    body
+        include ../components/loading
+        
+        include ../components/Navbar
+        +navbar(['','','','',''])
+
+        .container.mx-auto.overflow-hidden.my-16
+            .flex.flex-wrap.my-16
+                .flex.flex-wrap.justify-center.w-full.mb-2.px-2
+                    include ../utils/header
+                    +header('سجل حساب')
+                .-mx-2.w-full
+                    form.flex.flex-wrap.px-2.justify-center.login(action="#" method="method")
+                        include ../utils/inputs
+                        +input({name: "signUserName", text:"اسمك"} ,{ type: "email", placeholder: "اكتب اسمك"} ,"")(required)
+                    
+                        +input({name: "signUserEmail", text:"البريد الالكتروني"} ,{ type: "email", placeholder: "مثال: example@example.com"} ,"أدخل بريدك الإلكتروني")(required)
+                        
+                        +input({name: "loginUserPassword", text:"كلمة السر"} ,{ type: "password", placeholder: "أدخل كلمة السر"} ,"أدخل كلمة السر الخاصة بك")(required)
+                        
+                        a(href="login.html").w-full.text-gray-500.block.text-right.px-4.py-2 تملك حساب بالفعل؟
+                        button.inline-block.p-2.px-8.text-white.text-lg.font-normal.mt-4(type="submit") سجل حساب
+        
+        include ../components/Footer
+        
+        script(src='./js/move.js')
+        script(src='./js/app.js')
